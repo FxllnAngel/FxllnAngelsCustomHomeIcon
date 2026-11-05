@@ -1,0 +1,79 @@
+/* ═══════════════════════════════════════════════
+   ✦ FXLLN ANGELS — CUSTOM HOME ICON CHANGER ✦
+   Custom image • Hover support • Selected support
+/**
+ * @name Discord Custom Icon
+ * @author Fxlln Angel
+ * @version 1.0
+ * @description Customize You Discord Icon with a Personal Touch :)
+ * @Invite Link https://discord.gg/fJkDYyF3tg
+*/
+ /* ═══════════════════════════════════════════════ */
+
+/* ── 01. CUSTOMIZATION ────────────────────────── */
+
+:root {
+    --my-home-icon: url("Paste giphy.com Link Here");
+    --my-home-radius: 30%;
+}
+
+
+/* ── 02. HOME BUTTON CONTAINER ────────────────── */
+
+[data-list-item-id="guildsnav___home"] {
+    overflow: hidden !important;
+}
+
+
+/* ── 03. CUSTOM IMAGE & POSITIONING ───────────── */
+
+[data-list-item-id="guildsnav___home"] > div {
+    background-image: var(--my-home-icon) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    border-radius: var(--my-home-radius) !important;
+    overflow: hidden !important;
+}
+
+
+/* ── 04. HIDE ORIGINAL DISCORD HOME ICON ──────── */
+
+[data-list-item-id="guildsnav___home"] svg {
+    display: none !important;
+}
+
+
+/* ── 05. INNER ICON WRAPPER ───────────────────── */
+
+[data-list-item-id="guildsnav___home"] [class*="childWrapper"] {
+    background-color: transparent !important;
+    background-image: var(--my-home-icon) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    border-radius: var(--my-home-radius) !important;
+}
+
+
+/* ── 06. HOVER & SELECTED STATES ──────────────── */
+
+[data-list-item-id="guildsnav___home"]:hover > div,
+[data-list-item-id="guildsnav___home"][class*="selected"] > div {
+    background-image: var(--my-home-icon) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: var(--my-home-radius) !important;
+}
+
+
+/* ── 07. BACKGROUND DISPLAY FIX ───────────────── */
+
+[data-list-item-id="guildsnav___home"] * {
+    background-repeat: no-repeat !important;
+}
+
+
+/* ── ✦ END OF FXLLN ANGELS CUSTOM CSS ✦ ───────── */
